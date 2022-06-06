@@ -1,0 +1,36 @@
+{
+    "name": "bomberman-ai-front",
+    "version": "1.0.0",
+    "description": "Bomberman-like videogame as for AI combat!",
+
+    "repository": {
+      "type": "git",
+      "url": "git+https://Mirkesx@github.com/Mirkesx/project_web_programming.git"
+    },
+    "keywords": [
+      "La Horde",
+      "Bomberman",
+      "Node.js",
+      "Videogame",
+      "app"
+    ],
+    "author": "La Horde, forked from Marco Cavalli's project",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/Mirkesx/project_web_programming/issues"
+    },
+    "homepage": "https://github.com/Mirkesx/project_web_programming#readme",
+    "dependencies": {
+      "@popperjs/core": "^2.4.4",
+      "bootstrap": "^4.5.0",
+      "font-awesome": "^4.7.0",
+      "jquery": "^3.5.1",
+      "jquery-ui": "^1.12.1",
+      "jquery-ui-css": "^1.11.5",
+      "phaser": "^3.23.0",
+      "popper.js": "^1.16.1",
+      "socket.io": "^2.3.0",
+      "underscore": "^1.10.2"
+    }
+  }
+  
