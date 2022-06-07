@@ -38,9 +38,10 @@ var bombs, flipFlopBomb;
 var animated; //animated is used to show the right animation with the player sprite
 var anim;
 var walls;
+var myPlayer;
 
 function startGame(b, f, s, playersList, your_id, stage, items) {
-
+    myPlayer = your_id;
     var config = {
         type: Phaser.AUTO,
         width: 240,
@@ -318,7 +319,7 @@ function startGame(b, f, s, playersList, your_id, stage, items) {
         let i = 0;
         for (let user in list) {
             let player = colorMap[list[user].color];
-            players.push(createPlayer(player.x, player.y, player.sprites, i));
+            forbidden.players.push(createPlayer(player.x, player.y, player.sprites, i));
 
             if (list[user].color == "gray")
                 playersList[user].color = "white";
@@ -358,7 +359,6 @@ function startGame(b, f, s, playersList, your_id, stage, items) {
             chevronUp = true;
         });
         $('#chevron-down').bind('mousedown touchstart', () => {
-            console.log("checked");
             chevronDown = true;
         });
         $('#chevron-left').bind('mousedown touchstart', () => {
@@ -428,7 +428,7 @@ function startGame(b, f, s, playersList, your_id, stage, items) {
     };
 
     killEnemy = (id) => {
-        console.log(id);
+        //console.log(id);
         if (your_id != id) {
             try {
                 players[id].status = "dead";
@@ -534,7 +534,7 @@ function startGame(b, f, s, playersList, your_id, stage, items) {
             scene.physics.add.collider(scene.flamesGroup, bomb, () => {
                 explosion(bomb, -0.5);
             });
-
+            //console.log("pushed bomb");
             bombs.push(bomb);
             return bomb;
         }

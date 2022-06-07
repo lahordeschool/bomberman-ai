@@ -1,4 +1,4 @@
-const SERVER_URL = "http://192.168.10.21:8080";
+const SERVER_URL = "http://51.210.149.106:8080";
 
 /*
 * 
@@ -41,10 +41,7 @@ var directions = ["up", "down", "left", "right"];
 
 async function gameLoop(data){
     
+    console.log(data);
         
     return "MOVE "+directions[Math.floor(Math.random()*directions.length)];
-    
-    console.log(data);
-
-
 }

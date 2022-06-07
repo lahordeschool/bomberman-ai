@@ -1,9 +1,16 @@
-
 function mapDataForAiVision(){
     return {
-        players: players
+        players: players.map(({id, x, y})  => ({id, x, y})),
+        myPlayer: myPlayer,
+        walls: walls.map(({height, width, x, y, active, state, ignoreDestroy}) => ({height, width, x, y, active, state, ignoreDestroy})),
+        bombs: bombs.map(({player_id, x,y})=>({player_id, x, y}))
+        /*flipFlopBomb: flipFlopBomb,
+        scene: scene,
+        tileset: tileset,
+        map: map*/
     };
 }
+var gameOn = true;
 
 async function aiLogicStart (){
     await sleep(3000);
@@ -11,7 +18,8 @@ async function aiLogicStart (){
 }
 
 async function aiLogic (){
-    while(true){
+  
+    while(gameOn){
         
         gameLoop(mapDataForAiVision()).then(function(actionText){
             let actions = actionText.toString().toLowerCase().split(" ");

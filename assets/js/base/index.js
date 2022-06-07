@@ -325,6 +325,7 @@ $(document).ready(() => {
                     setTimeout(() => exitGame(), 5000);
                     socket.emit('close-game');
                     inGame = false;
+                    gameOn = false;
                 }
             });
         });
