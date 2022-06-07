@@ -7,10 +7,10 @@
 
 ## Install the game
 
-Run "npm install" in the repository.
-
+1. Run "npm install" in the repository.
 If you don't know how to do it, ask kindly to one of your fellow developers to install the game and share the .zip folder with you. 
 
+2. Edit server ip address on the first line of "your-ai-goes-here.js" (if necessary). Ask the game admin to give you the server address.  
 
 ## Run the game
 
