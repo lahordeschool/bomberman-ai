@@ -5,19 +5,25 @@
 *Made with love by LA HORDE for BETCLIC*
 *This project has been made by a total noob, so don't judge if you find any bug :) just report it on the github project please.* 
 
+## Install the game
+
+Run "npm install" in the repository.
+
+If you don't know how to do it, ask kindly to one of your fellow developers to install the game and share the .zip folder with you. 
+
 
 ## Run the game
 
 1. Open Chrome **WITHOUT web security**
 
-- On Windows : 
-run cmd : chrome.exe --allow-file-access-from-files
+- On Windows : (powershell or terminal)
+*start chrome --allow-file-access-from-files*
 
 - On Mac : (from terminal)
-open /Applications/Google\ Chrome.app/ --args --allow-file-access-from-files
+*open /Applications/Google\ Chrome.app/ --args --allow-file-access-from-files*
 
 - On Ubuntu : (from terminal)
-chromium-browser --disable-web-security
+*chromium-browser --disable-web-security*
 
 (this step is necessary to avoid CORS errors from file protocol)
 
