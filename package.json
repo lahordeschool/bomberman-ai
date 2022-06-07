@@ -5,7 +5,7 @@
 
     "repository": {
       "type": "git",
-      "url": "git+https://Mirkesx@github.com/Mirkesx/project_web_programming.git"
+      "url": "git+https://github.com/lahordeschool/bomberman-ai"
     },
     "keywords": [
       "La Horde",
@@ -15,11 +15,11 @@
       "app"
     ],
     "author": "La Horde, forked from Marco Cavalli's project",
-    "license": "ISC",
+    "license": "MIT",
     "bugs": {
-      "url": "https://github.com/Mirkesx/project_web_programming/issues"
+      "url": "https://github.com/lahordeschool/bomberman-ai/issues"
     },
-    "homepage": "https://github.com/Mirkesx/project_web_programming#readme",
+    "homepage": "https://github.com/lahordeschool/bomberman-ai#readme",
     "dependencies": {
       "@popperjs/core": "^2.4.4",
       "bootstrap": "^4.5.0",
