@@ -319,7 +319,7 @@ function startGame(b, f, s, playersList, your_id, stage, items) {
         let i = 0;
         for (let user in list) {
             let player = colorMap[list[user].color];
-            forbidden.players.push(createPlayer(player.x, player.y, player.sprites, i));
+            players.push(createPlayer(player.x, player.y, player.sprites, i));
 
             if (list[user].color == "gray")
                 playersList[user].color = "white";
