@@ -24,7 +24,7 @@ async function aiLogic (){
     while(gameOn){
         
         gameLoop(mapDataForAiVision()).then(function(actionText){
-            let actions = actionText.toString().toLowerCase().split(" ");
+            let actions = actionText == undefined ? "" : actionText.toString().toLowerCase().split(" ");
             console.log(actions);
             switch (actions[0]) {
                 case "plant":
