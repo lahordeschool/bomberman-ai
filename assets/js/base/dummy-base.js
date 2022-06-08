@@ -36,7 +36,7 @@ async function aiLogic (){
             }
         });
         
-        await sleep(500);
+        await sleep(250);
     }
 }
 
