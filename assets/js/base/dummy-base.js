@@ -1,13 +1,14 @@
 function mapDataForAiVision(){
+    let mapInfos
     return {
         players: players.map(({id, x, y})  => ({id, x, y})),
         myPlayer: myPlayer,
         walls: walls.map(({height, width, x, y, active, state, ignoreDestroy}) => ({height, width, x, y, active, state, ignoreDestroy})),
-        bombs: bombs.map(({player_id, x,y})=>({player_id, x, y}))
+        bombs: bombs.map(({player_id, x,y})=>({player_id, x, y})),
         /*flipFlopBomb: flipFlopBomb,
         scene: scene,
-        tileset: tileset,
-        map: map*/
+        tileset: tileset,*/
+        map: {heightInPixels : map.heightInPixels, widthInPixels : map.widthInPixels, height : map.height, width : map.width},
     };
 }
 var gameOn = true;
