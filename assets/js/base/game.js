@@ -307,11 +307,6 @@ function startGame(b, f, s, playersList, your_id, stage, items) {
 
 
 
-
-
-
-
-
     // FUNCTIONS
 
     const addPlayers = (list) => {
