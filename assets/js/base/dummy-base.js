@@ -14,6 +14,7 @@ function mapDataForAiVision(){
 var gameOn = true;
 
 async function aiLogicStart (){
+    gameOn = true;
     await sleep(3000);
     aiLogic();
 }

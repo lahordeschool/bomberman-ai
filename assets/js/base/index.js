@@ -579,6 +579,7 @@ function deletePopup(popup, time, top) {
 };
 
 function countDown() {
+
     let height = $(document).height()/4; 
     if (!isMobile) {
         createPopup("3", 333, height, 300);
@@ -609,7 +610,6 @@ function countDown() {
 }
 
 function allowMovements() {
-   
     let height = $(document).height()/4; 
     if (!isMobile) {
         cursors = game.scene.scenes[0].input.keyboard.createCursorKeys();

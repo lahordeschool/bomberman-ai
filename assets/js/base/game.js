@@ -196,12 +196,12 @@ function startGame(b, f, s, playersList, your_id, stage, items) {
     function create() {
 
         // MAP
-        if (map === undefined) {
-            map = scene.make.tilemap({ key: 'map', tileWidth: 16, tileHeight: 16 });
-            tileset = map.addTilesetImage('tiles-stage-1');
-            layer = map.createStaticLayer(0, tileset, 0, 0);
-            //layer.setCollisionByExclusion([3, 4]);
-        }
+
+        map = scene.make.tilemap({ key: 'map', tileWidth: 16, tileHeight: 16 });
+        tileset = map.addTilesetImage('tiles-stage-1');
+        layer = map.createStaticLayer(0, tileset, 0, 0);
+        //layer.setCollisionByExclusion([3, 4]);
+
 
         //WALLS ITEMS
         walls = [];
