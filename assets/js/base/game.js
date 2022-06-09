@@ -39,8 +39,9 @@ var animated; //animated is used to show the right animation with the player spr
 var anim;
 var walls;
 var myPlayer;
-
+var allStage;
 function startGame(b, f, s, playersList, your_id, stage, items) {
+    allStage = stage;
     myPlayer = your_id;
     var config = {
         type: Phaser.AUTO,
@@ -213,7 +214,6 @@ function startGame(b, f, s, playersList, your_id, stage, items) {
                 }
             }
         }
-
         for (let item of items) {
             createNewItem(item[0], item[1], item[2]);
         }

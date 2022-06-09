@@ -8,6 +8,7 @@ function mapDataForAiVision(){
         /*flipFlopBomb: flipFlopBomb,
         scene: scene,
         tileset: tileset,*/
+        stage: allStage,
         map: {heightInPixels : map.heightInPixels, widthInPixels : map.widthInPixels, height : map.height, width : map.width},
     };
 }
